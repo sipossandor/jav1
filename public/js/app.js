@@ -24787,13 +24787,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_CarDetails_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/CarDetails.vue */ "./resources/js/components/CarDetails.vue");
-/* harmony import */ var _components_CarData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/CarData */ "./resources/js/components/CarData.vue");
+/* harmony import */ var _components_CarData_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/CarData.vue */ "./resources/js/components/CarData.vue");
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     CarDetails: _components_CarDetails_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    CarData: _components_CarData__WEBPACK_IMPORTED_MODULE_1__["default"]
+    CarData: _components_CarData_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
