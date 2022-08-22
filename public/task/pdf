@@ -1,0 +1,31 @@
+Irányelvek a feladat megoldásához
+ Hozzon létre egy VueJs-t tartalmazó és futtatni képes projektet. Használhatja a Vite, VueCLI vagy Laravel (with VueJs) megoldások bármelyikét.
+ A különböző feladatokat egy weboldal részeként valósítsa meg, mely Laravel projekt esetén a „/” útvonalon legyen elérhető, a másik két megoldás esetén az index.html fájlban kapjon helyet.
+ A különböző feladat részeket egy-egy teljes szélességű vízszintes vonallal válassza el.
+ A VueJs feladatok esetében nem szükséges külön Instance, app div létrehozása, dolgozhat egy Instance-on belül.
+
+1. Feladat: Bootstrap reszponzív felület létrehozása
+Hozzon létre egy div-et melyre alkalmazza a container-fluid CSS class-t, az 1. feladat megoldása során ezen belül dolgozzon. Gondoskodjon arról, hogy a fájlba behívásra kerüljenek a megfelelő helyen a Bootstrap 5.0 CSS keretrendszer állományai.
+1. Hozzon létre a Boostrap Grid segítségével egy olyan szerkezetet, melyben Boostrap Cardokat helyez el. Amennyiben a képernyő szélessége meghaladja a 768 px-t, akkor egy sorban 4 darab Card kapjon helyet, viszont ha ennél kisebb a szélesség, akkor csak 1 Card legyen egy sorban.
+2. A Card-okat úgy alakítsa ki, hogy azok tartalmazzanak 1 képet, címet és leírást. Minden Card alján legyen egy Boostrap Button hivatkozás (href=”#”).
+3. Legalább 6 Card-ot hozzon létre, azok tartalma (kép, cím, szöveg) tetszőlegesen választható.
+
+2. Feladat: VueJs komponens
+Hozzon létre (vízszintes vonalat követően) egy div-et, mely a „app” id-t kapja, ehhez kapcsolja a VueJs Instance-t. Készítse el a „CarDetails” komponenst az alábbiak szerint, majd jelenítsen meg belőle 3-at az oldalon, egymástól eltérő adatokkal.
+1. A komponens az alábbi property-kel rendelkezzen:
+a. licenc – autó rendszáma
+b. serial – autó gyári száma
+c. color – autó színe
+d. doors – autó ajtóinak száma
+2. A komponens az alábbi data elemekkel rendelkezzen:
+a. isOpen – alapértelmezetten „false”
+3. A komponens jelenítse meg egy címsorban az autó rendszámát, valamint mellette egy „Részletek” gombot.
+4. A címsor alatt egy 2 oszlopos, 3 soros táblázatban jelenítse meg az autó további adatait úgy, hogy az első oszlopba kerüljön a tulajdonság neve, a másodikba pedig annak értéke.
+5. Valósítsa meg, hogy a táblázat csak abban az esetben jelenjen meg, ha az „isOpen” értéke „true”.
+6. Valósítsa meg, hogy a gomb megnyomásakor az „isOpen” értéke negálásra kerüljön, azaz ha értéke „true”, akkor értéke változzon „false”-ra, ha „false”, akkor kapja a „true” értéket.
+3. Feladat: VueJs komponens beágyazás
+Készítse el a „CarData” komponenst, melynek feladata egy JSON-ből kapott elemek megjelenítése a „CardDetails” komponens segítségével. Az oldalban (a vízszintes vonalat követően) hozzon is létre egy <car-data> elemet, adjon át neki tetszőleges autó adatokat. (Amennyiben nem tudta elkészíteni a CarDetails komponenst, létrehozhat egy tetszőlegesen egyszerű komponenst, melyet felhasznál ebben a feladatban.)
+1. A „CarData” komponens az alábbi property-kel rendelkezzen:
+a. cars – autók listája, tartalmazza a licenc, serial, color és doors adatokat.
+2. A komponens egy címsorban jelenítse meg a „Autók” szöveget.
+3. A címsor alatt a JSON-ben kapott autókat egy-egy <car-details> elem segítségével jelenítse meg. A CarDetails komponenseket VueJs loop segítségével hozza létre és paraméterekben adja át a szükséges adatokat.
