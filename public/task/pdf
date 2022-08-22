@@ -1,4 +1,3 @@
-Irányelvek a feladat megoldásához
  Hozzon létre egy VueJs-t tartalmazó és futtatni képes projektet. Használhatja a Vite, VueCLI vagy Laravel (with VueJs) megoldások bármelyikét.
  A különböző feladatokat egy weboldal részeként valósítsa meg, mely Laravel projekt esetén a „/” útvonalon legyen elérhető, a másik két megoldás esetén az index.html fájlban kapjon helyet.
  A különböző feladat részeket egy-egy teljes szélességű vízszintes vonallal válassza el.
